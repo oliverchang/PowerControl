@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@rollup/plugin-commonjs': ^21.1.0
@@ -27,7 +27,7 @@ devDependencies:
   '@rollup/plugin-json': 4.1.0_rollup@2.77.1
   '@rollup/plugin-node-resolve': 13.3.0_rollup@2.77.1
   '@rollup/plugin-replace': 4.0.0_rollup@2.77.1
-  '@rollup/plugin-typescript': 8.3.3_ekpmegaybmymq5m2rlmygb35zm
+  '@rollup/plugin-typescript': 8.3.3_229ec218180b30c8759a8ad983077dcb
   '@types/react': 16.14.0
   '@types/webpack': 5.28.0
   rollup: 2.77.1
@@ -125,7 +125,7 @@ packages:
       rollup: 2.77.1
     dev: true
 
-  /@rollup/plugin-typescript/8.3.3_ekpmegaybmymq5m2rlmygb35zm:
+  /@rollup/plugin-typescript/8.3.3_229ec218180b30c8759a8ad983077dcb:
     resolution: {integrity: sha512-55L9SyiYu3r/JtqdjhwcwaECXP7JeJ9h1Sg1VWRJKIutla2MdZQodTgcCNybXLMCnqpNLEhS2vGENww98L1npg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
