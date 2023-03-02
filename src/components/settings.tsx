@@ -31,7 +31,7 @@ const SettingsEnableComponent:VFC = () =>{
     <div>
       <PanelSectionRow>
         <ToggleField
-          label={localizationManager.getString(22, "启用插件设置")}
+          label={localizationManager.getString(22, "Enable settings")}
           checked={enable}
           onChange={(enabled) => {
             Settings.setEnable(enabled);

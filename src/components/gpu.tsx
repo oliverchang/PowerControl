@@ -27,7 +27,7 @@ const GPUFreqComponent: VFC = () => {
   return (
     <PanelSectionRow>
       <SlowSliderField
-        label={localizationManager.getString(19, "GPU 频率")}
+        label={localizationManager.getString(19, "GPU frequency")}
         value={gpuFreq}
         step={50}
         max={Backend.data.getGPUFreqMax()}
@@ -66,7 +66,7 @@ const GPURangeComponent: VFC = () => {
     <div>
     <PanelSectionRow>
       <SlowSliderField
-        label={localizationManager.getString(20, "GPU 最大频率限制")}
+        label={localizationManager.getString(20, "GPU max frequency")}
         value={gpuRangeMaxFreq}
         step={50}
         max={Backend.data.getGPUFreqMax()}
@@ -81,7 +81,7 @@ const GPURangeComponent: VFC = () => {
     </PanelSectionRow>
     <PanelSectionRow>
     <SlowSliderField
-        label={localizationManager.getString(21, "GPU 最小频率限制")}
+        label={localizationManager.getString(21, "GPU min frequency")}
         value={gpuRangeMinFreq}
         step={50}
         max={Backend.data.getGPUFreqMax()}
@@ -121,7 +121,7 @@ const GPUAutoComponent: VFC = () => {
     <div>
     <PanelSectionRow>
       <SlowSliderField
-        label={localizationManager.getString(20, "GPU 最大频率限制")}
+        label={localizationManager.getString(20, "GPU max frequency")}
         value={gpuAutoMaxFreq}
         step={50}
         max={Backend.data.getGPUFreqMax()}
@@ -136,7 +136,7 @@ const GPUAutoComponent: VFC = () => {
     </PanelSectionRow>
     <PanelSectionRow>
     <SlowSliderField
-      label={localizationManager.getString(21, "GPU 最小频率限制")}
+      label={localizationManager.getString(21, "GPU min frequency")}
       value={gpuAutoMinFreq}
       step={50}
       max={Backend.data.getGPUFreqMax()}
@@ -174,7 +174,7 @@ const GPUModeComponent: VFC = () => {
         <div>
           <PanelSectionRow>
           <SliderField
-            label={localizationManager.getString(15, "GPU 频率模式")}
+            label={localizationManager.getString(15, "GPU mode")}
             value={gpuMode}
             step={1}
             max={3}
@@ -183,19 +183,19 @@ const GPUModeComponent: VFC = () => {
             notchLabels={
               [{
                 notchIndex: GPUMODE.NOLIMIT,
-                label: `${localizationManager.getString(16, "不限制")}`,
+                label: `${localizationManager.getString(16, "No limit")}`,
                 value: GPUMODE.NOLIMIT,
               }, {
                 notchIndex: GPUMODE.FIX,
-                label: `${localizationManager.getString(17, "固定频率")}`,
+                label: `${localizationManager.getString(17, "Fixed")}`,
                 value: GPUMODE.FIX,
               }, {
                 notchIndex: GPUMODE.RANGE,
-                label: `${localizationManager.getString(23, "范围频率")}`,
+                label: `${localizationManager.getString(23, "Frequency range")}`,
                 value: GPUMODE.RANGE,
               }, {
                 notchIndex: GPUMODE.AUTO,
-                label: `${localizationManager.getString(18, "自动频率")}`,
+                label: `${localizationManager.getString(18, "Automatic")}`,
                 value: GPUMODE.AUTO,
               }
               ]

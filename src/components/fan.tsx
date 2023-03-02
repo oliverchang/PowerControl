@@ -30,7 +30,7 @@ const FANRPMComponent: VFC = () => {
   return (
       <PanelSectionRow>
             <Field
-              label= {localizationManager.getString(24,"风扇转速")}>
+              label= {localizationManager.getString(24,"Fan speed")}>
               {fanrpm + " PRM"}
             </Field>
       </PanelSectionRow>
@@ -98,7 +98,7 @@ const FANCreateProfileComponent: VFC = ()=>{
         onClick={() => {
           showModal(<FANCretateProfileModelComponent/>);
         }}>
-        {localizationManager.getString(25,"创建风扇配置文件")}
+        {localizationManager.getString(25,"Create fan profile")}
       </ButtonItem>
     </PanelSectionRow>
   )
