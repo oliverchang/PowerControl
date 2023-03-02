@@ -18,7 +18,7 @@ except Exception as e:
 try:
     HOMEBREW_PATH = get_homebrew_path(get_home_path(get_user()))   
     SH_PATH="{}/plugins/PowerControl/backend/sh_tools.sh".format(HOMEBREW_PATH)
-    RYZENADJ_PATH="{}/plugins/PowerControl/bin/ryzenadj".format(HOMEBREW_PATH)
+    RYZENADJ_PATH="/usr/bin/ryzenadj"
     GPUFREQ_PATH = "/sys/class/drm/card0/device/pp_od_clk_voltage"
 except Exception as e:
     logging.error(f"路径配置异常|{e}")
