@@ -4,7 +4,7 @@ import threading
 import time
 import os
 import asyncio
-from ec import EC
+#from ec import EC
 from config import logging,SH_PATH,FAN_MANUAL_OFFSET,FAN_RPMREAD_OFFSET,FAN_IS_ADAPTED,PRODUCT_NAME,FAN_RPMREAD_OFFSET
 from helpers import get_user
 
@@ -115,17 +115,7 @@ class SysInfoManager (threading.Thread):
             return self._language
 
     def get_fanRPM(self):
-        try:
-            if FAN_IS_ADAPTED:
-                fanRPM=EC.ReadLonger(FAN_RPMREAD_OFFSET,2)
-                logging.debug(f"机型已适配fan 当前机型:{PRODUCT_NAME} 读取EC地址:{hex(FAN_RPMREAD_OFFSET)} 风扇转速:{fanRPM}")
-                return fanRPM
-            else:
-                logging.debug(f"机型未适配fan 当前机型:{PRODUCT_NAME}")
-                return 0
-        except Exception as e:
-            logging.error(f"获取风扇转速异常:{e}")
-            return 0
+        return 0
 
     def updateCpuData(self):
         global cpu_DataErrCnt
