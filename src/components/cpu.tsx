@@ -29,7 +29,7 @@ const CPUBoostComponent:VFC = () =>{
     <div>
       <PanelSectionRow>
         <ToggleField
-          label={localizationManager.getString(6, "Turbo")}
+          label={localizationManager.getString(6, "睿 频")}
           description={localizationManager.getString(7, "提升最大cpu频率")}
           disabled={disabled}
           checked={cpuboost}
@@ -93,8 +93,8 @@ const CPUNumComponent:VFC = () =>{
     <div>
       <PanelSectionRow>
           <SlowSliderField
-            label={localizationManager.getString(9, "Cores")}
-            description={localizationManager.getString(10, "Set the number of enabled cores")}
+            label={localizationManager.getString(9, "核 心 数")}
+            description={localizationManager.getString(10, "设置启用的物理核心数量")}
             value={cpunum}
             step={1}
             max={Backend.data.getCpuMaxNum()}
@@ -133,7 +133,7 @@ const CPUTDPComponent:VFC = () =>{
     <div>
       <PanelSectionRow>
             <ToggleField
-              label={localizationManager.getString(11, "TDP Limit")}
+              label={localizationManager.getString(11, "热设计功耗 (TDP) 限制")}
               description={Backend.data.HasRyzenadj() ? localizationManager.getString(12, "限制处理器功耗以降低总功耗") : localizationManager.getString(13, "未检测到ryzenAdj")}
               checked={tdpEnable}
               disabled={disabled}
@@ -144,7 +144,7 @@ const CPUTDPComponent:VFC = () =>{
           </PanelSectionRow>
           {tdpEnable&&<PanelSectionRow>
             <SlowSliderField
-              label={localizationManager.getString(14, "Watts")}
+              label={localizationManager.getString(14, "瓦特")}
               value={tdp}
               step={1}
               max={Backend.data.getTDPMax()}
