@@ -1,5 +1,7 @@
 # PowerControl
 
+![download](https://user-images.githubusercontent.com/759062/230850075-2669fada-44e5-4cb1-99cb-57e6c046221a.jpg)
+
 Fork of the decky-loader plugin from https://github.com/Gawah/PowerControl.
 
 This is primarily intended to work with ChimeraOS. 
