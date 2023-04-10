@@ -23,3 +23,5 @@ $ sudo tar -xvzf PowerControl.tar.gz -C homebrew/plugins/
 ```
 3. Reboot
 
+See also https://github.com/ChimeraOS/chimeraos/wiki/TDP-Controls#installing-powercontrol
+
