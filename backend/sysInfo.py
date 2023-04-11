@@ -96,7 +96,7 @@ class SysInfoManager (threading.Thread):
         self._collectInfoInterval=0.005           #记录数据的间隔
         self._isRunning = False     #标记是否正在运行gpu频率优化
 
-        self._language = "schinese"     #当前客户端使用的语言
+        self._language = "english"     #当前客户端使用的语言
 
         threading.Thread.__init__(self)
     
