@@ -17,7 +17,7 @@ The main changes from the original project are:
 2. In a console on your device, run:
 ```
 $ cd
-$ curl -OL https://github.com/oliverchang/PowerControl/releases/download/v0.0.4/PowerControl.tar.gz
+$ curl -OL https://github.com/oliverchang/PowerControl/releases/download/v0.0.5/PowerControl.tar.gz
 $ sudo rm -rf homebrew/plugins/PowerControl 
 $ sudo tar -xvzf PowerControl.tar.gz -C homebrew/plugins/
 ```
